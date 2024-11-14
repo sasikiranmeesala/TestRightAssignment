@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 250px;
+    animation: hoverUp 1.5s forwards;
+}
+
+@keyframes hoverUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.button {
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-container input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
